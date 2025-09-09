@@ -8,32 +8,39 @@ public class programaFaixaEtaria2 {
 			System.out.println("Insira a idade:");
 			idade = ler.nextInt();
 			if (idade<16) {
+				System.out.println("1a faixa.");
 				f1 = f1+1;
 			}
 			else if (idade<31) {
+				System.out.println("2a faixa");
 				f2=f2+1;
 			}
 			else if (idade<46) {
+				System.out.println("3a faixa");
 				f3=f3+1;
 			}
 			else if (idade<61) {
+				System.out.println("4a faixa");
 				f4=f4+1;
 			}
 			else {
+				System.out.println("5a faixa");
 				f5=f5+1;
 			}
 			i++;
-			System.out.println("Deseja continuar? 1- Sim 2- Não");
+			System.out.println("Deseja continuar? digite 1 se sim, ou qualquer outro número se não.");
 			c = ler.nextInt();
 			}
 		while (c==1);
-		System.out.println("1ª faixa: "+f1-100/i+"%");
-		System.out.println("2ª faixa: "+f2-100/i+"%");
-		System.out.println("3ª faixa: "+f3-100/i+"%");
-		System.out.println("4ª faixa: "+f4-100/i+"%");
-		System.out.println("5ª faixa: "+f5-100/i+"%");
-		System.out.println(f1+f2+f3+f4+f5);
+		if (c!=1) {
+			System.out.println("Pograma encerrado.");
+		}
+		System.out.println("1ª faixa: "+f1+" "+(f1*100/i)+"%");
+		System.out.println("2ª faixa: "+f2+" "+(f2*100/i)+"%");
+		System.out.println("3ª faixa: "+f3+" "+(f3*100/i)+"%");
+		System.out.println("4ª faixa: "+f4+" "+(f4*100/i)+"%");
+		System.out.println("5ª faixa: "+f5+" "+(f5*100/i)+"%");
+		System.out.println("O total de idades calculadas é: "+(f1+f2+f3+f4+f5));
 		ler.close();
 	}
-
 }
