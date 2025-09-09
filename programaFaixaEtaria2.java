@@ -33,7 +33,7 @@ public class programaFaixaEtaria2 {
 			}
 		while (c==1);
 		if (c!=1) {
-			System.out.println("Pograma encerrado.");
+			System.out.println("Programa encerrado.");
 		}
 		System.out.println("1ª faixa: "+f1+" "+(f1*100/i)+"%");
 		System.out.println("2ª faixa: "+f2+" "+(f2*100/i)+"%");
@@ -44,3 +44,4 @@ public class programaFaixaEtaria2 {
 		ler.close();
 	}
 }
+
