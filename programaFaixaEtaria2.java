@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class programaFaixaEtaria2 {
 	public static void main(String[] args) {
 		Scanner ler = new Scanner(System.in);
-		int i=0, c, f1=0, f2=0, f3=0, f4=0, f5=0, idade;
+		double i=0, c, f1=0, f2=0, f3=0, f4=0, f5=0, idade;
 		do {
 			System.out.println("Insira a idade:");
 			idade = ler.nextInt();
