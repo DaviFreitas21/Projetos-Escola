@@ -3,8 +3,7 @@ import java.util.Scanner;
 public class programaFaixaEtaria2 {
 	public static void main(String[] args) {
 		Scanner ler = new Scanner(System.in);
-		double por1, por2, por3, por4, por5;
-		int i=0, opcao, f1=0, f2=0, f3=0, f4=0, f5=0, idade;
+		int i=0, c, f1=0, f2=0, f3=0, f4=0, f5=0, idade;
 		do {
 			System.out.println("Insira a idade:");
 			idade = ler.nextInt();
@@ -25,19 +24,15 @@ public class programaFaixaEtaria2 {
 			}
 			i++;
 			System.out.println("Deseja continuar? 1- Sim 2- Não");
-			opcao = ler.nextInt();
+			c = ler.nextInt();
 			}
-		while (opcao==1);
-		if (opcao==2) {
-			System.out.println("Programa encerrado.");
-		}
-		por1=f1-100/i;
-		por2=f2-100/i;
-		por3=f3-100/i;
-		por4=f4-100/i;
-		por5=f5-100/i;
+		while (c==1);
+		System.out.println("1ª faixa: "+f1-100/i+"%");
+		System.out.println("2ª faixa: "+f2-100/i+"%");
+		System.out.println("3ª faixa: "+f3-100/i+"%");
+		System.out.println("4ª faixa: "+f4-100/i+"%");
+		System.out.println("5ª faixa: "+f5-100/i+"%");
 		System.out.println(f1+f2+f3+f4+f5);
-		System.out.println(por1+por2+por3+por4+por5);
 		ler.close();
 	}
 
