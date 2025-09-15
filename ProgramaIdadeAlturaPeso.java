@@ -13,7 +13,7 @@ public class ProgramaIdadeAlturaPeso {
 			idade=ler.nextInt();
 			System.out.println("Digite a altura da "+i+" pessoa (em metros): ");
 			altura=ler.nextDouble();
-			System.out.println("Digite o peso da "+i+" pessoa: ");
+			System.out.println("Digite o peso da "+i+" pessoa (em kg): ");
 			peso=ler.nextDouble();
 			
 			if (i==1) {
