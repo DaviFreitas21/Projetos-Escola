@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ProgramaIdadeAlturaPeso {
 	public static void main(String[] args) {
 		Scanner ler = new Scanner(System.in);
-		int i, idade,idMais50=0,id10a20=0, pesoMenor40=0, maisVelho=0, maisNovo=0;
+		int i, idade,idMais50=0,id10a20=0, pesoMenor40=0, maisVelho, maisNovo;
 		double altura, somaAltura=0, peso;
 		
 		for (i=1;i<26;i++) {
