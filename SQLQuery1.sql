@@ -25,7 +25,7 @@ idProduto INT FOREIGN KEY REFERENCES tbProduto (idProduto)
 CREATE TABLE tbFornecedor (
 idFornecedor INT PRIMARY KEY IDENTITY
 nomeFornecedor VARCHAR (50),
-cnpjFornecedor VARCHAR (50) 
+cnpjFornecedor CHAR (14) 
 );
 
 CREATE TABLE tbItemVendas (
@@ -37,15 +37,15 @@ idProduto INT FOREIGN KEY REFERENCES tbProduto (idProduto)
 CREATE TABLE tbFuncionario(
 idFuncionario INT PRIMARY KEY IDENTITY (1,1),
 nomeFuncionario VARCHAR (50),
-cpfFuncionario VARCHAR (50),
-rgFuncionario VARCHAR (50),
+cpfFuncionario CHAR (11),
+rgFuncionario VARCHAR (8),
 logradouroFuncionario VARCHAR (50),
 numLograFuncionario VARCHAR (50),
-cepFuncionario VARCHAR (50),
+cepFuncionario CHAR (8),
 bairoFuncionario VARCHAR (50),
 cidadeFuncionario VARCHAR (50),
 estadoFuncionario VARCHAR (50),
-ufFuncionario VARCHAR (50),
+ufFuncionario CHAR (2),
 complementoFuncionario VARCHAR (50)
 );
 
@@ -77,7 +77,7 @@ valorPagamento VARCHAR (50)
 CREATE TABLE tbCliente (
 idCliente INT PRIMARY KEY IDENTITY (1,1)
 nomeCliente VARCHAR (50),
-cpfCliente VARCHAR (50)
+cpfCliente CHAR (11)
 );
 
 CREATE TABLE tbEmailCliente (
@@ -94,11 +94,11 @@ idFuncionario INT FOREIGN KEY REFERENCES tbFuncionario (idFuncionario)
 
 CREATE TABLE tbFoneFuncionario (
 idFoneFuncionario INT PRIMARY KEY IDENTITY (1,1)
-numeroFoneFuncionario VARCHAR (50),
+numeroFoneFuncionario CHAR (11),
 idFuncionario INT FOREIGN KEY REFERENCES tbFuncionario (idFuncionario)
 );
 CREATE TABLE tbFoneCliente(
 idFoneCliente INT PRIMARY KEY IDENTITY (1,1)
-numeroFoneCliente VARCHAR (50),
+numeroFoneCliente CHAR (11),
 idCliente INT FOREIGN KEY REFERENCES tbCliente (idCliente)
 );
